@@ -37,7 +37,12 @@ font-size: 62.5%;
 --spacing-lg: 1.8rem;
 
 }
-
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
 html {
   scroll-behavior: smooth;
 }

@@ -2,19 +2,79 @@
 @import './global.css';
 
 nav {
-  padding: 2rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 6rem;
   background-color: var(--zinc-900);
   box-shadow: 0px 1px 0px 1px var(--fuchsia-700);
 }
 
-nav .navigation .menu {
+nav .navigation {
+  position: relative;
+}
+
+#toogle-menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 3.2rem;
+  height: 3.2rem;
+  position: relative;
+}
+
+#toogle-menu .menu-lines {
+  width: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.button-active .line1 {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.button-active .line2 {
+  display: none;
+}
+
+
+.button-active .line3 {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+
+nav .navigation .menu-lines .line {
+  width: 100%;
+  height: 2px;
+  background: none;
+  background-color: var(--zinc-200);
+}
+
+.active {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 8rem;
+
+}
+.menu {
+  display: none;
 }
 
 section {
-  margin-top: 6rem;
+  margin-top: 12rem;
   width: 32rem;
   padding-inline: 2rem;
 }
