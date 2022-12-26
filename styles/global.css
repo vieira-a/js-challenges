@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  transition: 0.2s;
+}
+
+:root {
+
+--webkit-font-smoothing: antialiased;
+
+--zinc-900: #18181b;
+--zinc-800: #27272a;
+--zinc-700: #3f3f46;
+--zinc-600: #52525b;
+--zinc-500: #71717a;
+--zinc-400: #a1a1aa;
+--zinc-300: #d4d4d8;
+--zinc-200: #e4e4e7;
+--zinc-100: #f4f4f5;
+--zinc-50: #fafafa;
+--fuchsia-900: #701a75;
+--fuchsia-800: #86198f;
+--fuchsia-700: #a21caf;
+--fuchsia-600: #c026d3;
+--fuchsia-500: #d946ef;
+--fuchsia-400: #e879f9;
+--fuchsia-300: #f0abfc;
+--fuchsia-200: #f5d0fe;
+--fuchsia-100: #fae8ff;
+--fuchsia-50: #fdf4ff;
+  
+font-size: 62.5%;
+--spacing-sm: 1.2rem;
+--spacing-md: 1.6rem;
+--spacing-lg: 1.8rem;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+  color: var(--zinc-50);
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+h5 {
+  font-size: 1.8;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 125%;
+  background-color: var(--fuchsia-600);
+  background-image: linear-gradient(45deg, var(--fuchsia-400), var(--fuchsia-700));
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+a:hover {
+  color: var(--fuchsia-400);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  line-height: 150%;
+  font-size: 1.4rem;
+  color: var(--zinc-200);
+  background-color: var(--zinc-800);
+}
