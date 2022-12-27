@@ -27,8 +27,6 @@ REUSED
 HEADER
 */
 
-
-
 .header {
   position: absolute;
   top: 0;
@@ -135,6 +133,7 @@ HEADER
 main {
   margin-top: 12rem;
   margin-inline: 1.6rem;
+  height: 100rem;
 }
 
 .card {
