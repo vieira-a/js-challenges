@@ -13,11 +13,13 @@ const alphabet = alpha.map((x) => {
 } 
 );
 
-
 function alphabetPosition(str) {
-  str.toUpperCase().split('').forEach((letter) => {
+  
+  strNormalized = str.normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '').toUpperCase().split('');
+  
+  strNormalized.forEach((letter) => {
     console.log(alphabet.indexOf(letter) + 1)
   })
 }
 
-alphabetPosition("anderson")
+alphabetPosition("ánderson vieira")
