@@ -7,3 +7,18 @@
  * Input: 145263 Output: 654321
  * 123456789 Output: 987654321
 */
+
+
+function descendingOrder(n){
+
+	if(n > 0) {
+
+		const arrayNumber = Array.from(String(n), Number);
+		const arrayDescendingOrder = arrayNumber.sort().reverse();
+		const numberArrayDescendingOrder = Number(arrayDescendingOrder.join(''))
+		console.log(numberArrayDescendingOrder)
+
+	} 
+}
+
+descendingOrder(1)
