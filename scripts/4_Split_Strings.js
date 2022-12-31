@@ -13,7 +13,7 @@
  * [ ] Aplly regex to validate typeof
  */
 
-const myString = 'anderson';
+const myString = 'pedro';
 
 function validate(str) {
 
