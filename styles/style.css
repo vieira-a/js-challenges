@@ -137,7 +137,8 @@ main {
 }
 
 .card {
-  width: 100%;
+  width: 95%;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
