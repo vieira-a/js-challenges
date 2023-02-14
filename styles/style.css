@@ -133,7 +133,11 @@ HEADER
 main {
   margin-top: 12rem;
   margin-inline: 1.6rem;
-  height: 100rem;
+}
+
+.main-header {
+  margin-bottom: 4.4rem;
+  text-align: center;
 }
 
 .card {
